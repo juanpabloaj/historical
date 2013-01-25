@@ -4,19 +4,19 @@ var map;
 var layerl0;
 function initialize() {
     map = new google.maps.Map(document.getElementById('map-canvas'), {
-    center: new google.maps.LatLng(32.259770213417774, 35.101516357421836),
-    zoom: 6,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
+        center: new google.maps.LatLng(32.259770213417774, 35.101516357421836),
+        zoom: 5,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
     });
     layerl0 = new google.maps.FusionTablesLayer({
-    query: {
-    select: "col2",
-    from: "1eNJwNBJREeQCy2r6XZi9RBFmJxdjH1X9gY09shM",
-    where :'begin >= "' + dbegin + '" and end <= "' + dend + '"'
-    },
-    map: map,
-    styleId: 2,
-    templateId: 2
+        query: {
+        select: "col2",
+        from: "1eNJwNBJREeQCy2r6XZi9RBFmJxdjH1X9gY09shM",
+        where :'begin >= "' + dbegin + '" and end <= "' + dend + '"'
+        },
+        map: map,
+        styleId: 2,
+        templateId: 2
     });
 }
 $(function() {
