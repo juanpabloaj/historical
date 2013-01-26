@@ -12,7 +12,7 @@ function initialize() {
         query: {
         select: "col2",
         from: "1eNJwNBJREeQCy2r6XZi9RBFmJxdjH1X9gY09shM",
-        where :'begin >= "' + dbegin + '" and end <= "' + dend + '"'
+        where:'begin <= ' + dend + ' and  end >= ' + dbegin + ''
         },
         map: map,
         styleId: 2,
